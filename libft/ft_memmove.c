@@ -6,13 +6,13 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:09:50 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 00:26:14 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:49:53 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	move(char *temp_dst, char *temp_src, size_t len)
+static void	move(char *temp_dst, char *temp_src, size_t len)
 {
 	size_t	i;
 

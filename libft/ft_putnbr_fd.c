@@ -6,13 +6,13 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:15:09 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 15:54:01 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:49:23 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	some_special_cases(int number, int fd)
+static void	some_special_cases(int number, int fd)
 {
 	if (number == -2147483648)
 	{
@@ -26,7 +26,7 @@ void	some_special_cases(int number, int fd)
 	}
 }
 
-int	check_if_negative(int number, int fd)
+static int	check_if_negative(int number, int fd)
 {
 	if (number < 0)
 	{

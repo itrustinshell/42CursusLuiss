@@ -6,13 +6,13 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:17:24 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 14:16:40 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:49:50 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	how_many_words(char const *s, char c)
+static unsigned int	how_many_words(char const *s, char c)
 {
 	unsigned int	count_words;
 	unsigned int	i;
@@ -32,7 +32,7 @@ unsigned int	how_many_words(char const *s, char c)
 	return (count_words);
 }
 
-char	**set_initial_output(const char *s, char c)
+static char	**set_initial_output(const char *s, char c)
 {
 	char	**output;
 
@@ -44,7 +44,7 @@ char	**set_initial_output(const char *s, char c)
 	return (output);
 }
 
-char	**delete(int n, char **output)
+static char	**delete(int n, char **output)
 {
 	while (n > 0)
 	{
@@ -56,7 +56,7 @@ char	**delete(int n, char **output)
 	return (NULL);
 }
 
-void	finding_len(unsigned int *i, char c, unsigned int *initial,
+static void	finding_len(unsigned int *i, char c, unsigned int *initial,
 	const char *s)
 {
 	while (s[*i] == c)

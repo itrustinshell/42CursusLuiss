@@ -6,13 +6,13 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 17:23:39 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 15:29:19 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:48:48 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*special_cases(int n)
+static char	*special_cases(int n)
 {
 	char	*output;
 	char	*min;
@@ -39,7 +39,7 @@ char	*special_cases(int n)
 	return (output);
 }
 
-char	*build_output(int divisor, int number, char *output, int n)
+static char	*build_output(int divisor, int number, char *output, int n)
 {
 	int		converted_number;
 
@@ -56,7 +56,7 @@ char	*build_output(int divisor, int number, char *output, int n)
 	return (output);
 }
 
-char	*final(int how_many_digits, int divisor, int number, char sign)
+static char	*final(int how_many_digits, int divisor, int number, char sign)
 {
 	int		n;
 	char	*output;
@@ -82,7 +82,7 @@ char	*final(int how_many_digits, int divisor, int number, char sign)
 	return (output);
 }
 
-char	*second_part(char sign, int number, int n)
+static char	*second_part(char sign, int number, int n)
 {
 	char	*output;
 	size_t	how_many_digits;

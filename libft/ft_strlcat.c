@@ -6,13 +6,14 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 19:15:39 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 00:53:58 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:52:43 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	strlcat_iterattors(char *dst, const char *src, size_t size, char *temp)
+static void	strlcat_iterattors(char *dst, const char *src, size_t size,
+	char *temp)
 {
 	size_t	i;
 

@@ -6,13 +6,13 @@
 /*   By: largenzi <largenzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 18:49:11 by largenzi          #+#    #+#             */
-/*   Updated: 2024/01/28 15:44:21 by largenzi         ###   ########.fr       */
+/*   Updated: 2024/01/28 16:50:47 by largenzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*special_case(char const *s1, char const *set)
+static char	*special_case(char const *s1, char const *set)
 {
 	char	*output;
 
@@ -29,7 +29,7 @@ char	*special_case(char const *s1, char const *set)
 	return (output);
 }
 
-char	*if_current_is_nullterminator(void)
+static char	*if_current_is_nullterminator(void)
 {
 	char	*output;
 
